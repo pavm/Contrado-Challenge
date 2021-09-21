@@ -1,0 +1,16 @@
+@import "./flex";
+@import "./variables";
+
+.medium-block {@include flexCenter(center, center,column); background-color: white; margin-bottom: 4rem; width: 48%;}
+.medium-block-text {width: 90%; @include flexCenter(center, left,column); margin-bottom: auto;}
+
+.artist-feature {font-size: .7rem; margin-bottom: auto; padding-left: $padding-left-main-text; padding-right: $padding-right-main-text; color: blue;}
+    .af1 {color:pink}
+    .af2 {color:lightgreen}
+
+@media screen and (max-width: 900px) {
+
+    .article-section {@include flexCenter(space-between, center,column);}
+.medium-block {@include flexCenter(center, center,column); background-color: white; margin-bottom: 4rem; width: 100%;}
+.medium-block-text {width: 100%; @include flexCenter(center, left,column); margin-bottom: auto;}
+}

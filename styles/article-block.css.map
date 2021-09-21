@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,WAAW,CAAC;ECDR,OAAO,EAAE,IAAI;EACb,eAAe,EDAc,MAAM;ECCnC,WAAW,EAAE,MAAM;EACnB,cAAc,EDFsB,MAAM;CAAG",
+    "sources": [
+        "article-block.scss",
+        "_flex.scss"
+    ],
+    "names": [],
+    "file": "article-block.css"
+}

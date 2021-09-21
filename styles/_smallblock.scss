@@ -1,0 +1,24 @@
+@import "./flex";
+@import "./variables";
+
+.masonry {@include flexCenter(space-between, center, row); width: 100%; margin-top: auto;}
+.masonry-view {@include flexCenter(space-between, center,column); width: 100%; flex-wrap: wrap; margin-bottom: auto; width: 30.7%}
+
+
+.small-block {@include flexCenter(center, center,column); background-color: white; margin-bottom: 4rem; width: 100%;}
+.small-block-text {width: 100%; @include flexCenter(center, left,column); margin-bottom: auto;}
+
+.block-header-small {color: $text; font-size: 1rem; padding-bottom: 0.7rem; padding-top: 2rem; padding-left: $padding-left-main-text; padding-right: $padding-right-main-text} 
+.block-date-small {color: $text; font-size: .7rem; padding-bottom: 1.5rem; padding-left: $padding-left-main-text; padding-right: $padding-right-main-text; color: lightgray;}
+.block-desc-small {color: $text; font-size: .6rem; padding-bottom: 1.8rem; padding-left: $padding-left-main-text; padding-right: $padding-right-main-text; line-height: 1rem;}
+.block-read-more-small {color: $text; font-size: .7rem; padding-bottom: 1.7rem; padding-left: $padding-left-main-text; padding-right: $padding-right-main-text; text-decoration: underline; cursor: pointer;}
+.block-read-more-small:hover {text-decoration: none;}
+.artist-feature-small {color: pink; font-size: .7rem; margin-bottom: auto; padding-left: $padding-left-main-text; padding-right: $padding-right-main-text}
+
+
+@media screen and (max-width: 900px) {
+    .masonry {@include flexCenter(space-between, center, column); width: 100%; margin-top: auto;}
+.masonry-view {@include flexCenter(space-between, center,column); width: 100%; flex-wrap: wrap; margin-bottom: auto; width: 100%}
+.artist-feature {margin-bottom: 1.5rem;}
+.artist-feature-small {margin-bottom: 1.5rem;}
+}

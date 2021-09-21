@@ -1,113 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!--<meta http-equiv="refresh" content="3">-->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href=""> <!-- favicon -->
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link rel="stylesheet" href="/styles/style.css">
 
-  <title>Frontend Mentor | Intro component with sign up form</title>
+  <title></title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-
-    *{
-    padding: 0;
-    margin: 0;
-    }
-
-    body { background-color: hsl(0, 100%, 74%);
-      background-image: url("images/bg-intro-desktop.png");
-    color: white;
-    min-width: 375px;
-    width: 100%;
-      height: auto; }
-
-.container { display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;}
-
-.flex-block {box-sizing: border-box; width: 50%; margin-top: 10rem}
-.text-box {padding-left: 8rem; padding-right: 5rem;}
-
-
-.headertext {font-size: 3rem; font-family:'Poppins'; color: white; line-height: 3rem; margin-bottom: 1.5rem; font-weight: 900}
-.ptext {font-size: 1rem; font-family:'Poppins'; color: white;}
-
-.label {background-color: hsl(248, 32%, 49%); color: white; font-family:'Poppins'; border-radius: 15px; width: 75%;  -webkit-box-shadow: 0px 10px #000000;
-   -moz-box-shadow: 0px 8px rgba(0, 0, 0, 0.15);
-        box-shadow: 0px 8px rgba(0, 0, 0, 0.15);
-       margin-bottom: 1rem; padding-top: 1rem; padding-bottom: 1rem; text-align: center;}
-
-.form-background {background-color: white; text-align: center; border-radius: 15px; width: 75%; padding-top: 1.5rem; padding-bottom: 2rem; -webkit-box-shadow: 0px 10px #000000;
-   -moz-box-shadow: 0px 8px rgba(0, 0, 0, 0.15);
-        box-shadow: 0px 8px rgba(0, 0, 0, 0.15);}
-.form-input {width: 90%; border-radius: 5px; padding-left: 2rem; margin-top: 1rem; height: 3.5rem; border: 1px solid hsl(246, 25%, 77%); font-family:'Poppins'; font-size: 1.2rem; box-sizing: border-box;}
-.form-input:focus {outline: none !important; border: 1px solid black;}
-
-.form-button {background-color: hsl(154, 59%, 51%); color: white; font-family:'Poppins'; width: 90%; border:none; border-radius: 10px; height: 3rem; font-size: 16px; margin-top: 1.5rem; margin-bottom: 1.5rem}
-.form-button:hover {background-color: hsl(154, 39%, 51%);}
-
-.terms-text{color: hsl(246, 25%, 77%); font-family:'Poppins'; font-size: 0.8rem;}
-.link {color:red; text-decoration: none;}
-.link:hover {text-decoration: underline;}
-
-
-@media screen and (max-width: 900px) {
-.container {display: flex;
-        flex-flow: column;
-        padding: 2rem 3rem 1rem 3rem;}
-
-.flex-block {margin-top: 0rem; width: 100%}
-
-.text-box {padding-left: 2rem; padding-right: 2rem; margin-bottom: 2rem; text-align: center;}
-
-.form-background {width: 100%}
-.label {width: 100%}
-
-
-}
-</style>
 </head>
 
 <body>
   <main>
 
+  
   <div class="container">
 
-  <div class="flex-block text-box">
-    <p class="headertext"><b>Learn to code by watching others</b></p>
-    <p class="ptext">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+  <div class="header">
+  <h1 class="header-text">Stories</h1>
   </div>
 
-  <div class="flex-block">
-    <div class="label"><p><b>Try it free 7</b> days then $20/mo. thereafter</p></div>
-    <div class="form-background">
-    <form name="myForm" onsubmit="return validateForm()" method="post">
-      <input class="form-input" type="text" placeholder="First Name" name="fname" required></input>
-      <input class="form-input" placeholder="Last Name" required></input>
-      <input class="form-input" placeholder="Email Address" required></input>
-      <input class="form-input" placeholder="Password" type="password" required></input>
-      <button type="submit" value="Submit" class="form-button">CLAIM YOUR FREE TRIAL</button>
-    </form>
-    <p class="terms-text">By clicking the button you agree to our <a class="link" href="google.com">Terms and Services</a></p>
-    </div>
+  <div class="menu-bar">
+  <a>For Artist</a>
+  <a>Get Inspiration</a>
+  <a>How to</a>
+  <a>Industry News</a>
+  <a>Learn the basics</a>
   </div>
+
+
+  
+
+  <div class="sort-by">
+    <p>Sort By</p>
+    <i class="arrow down"></i>
+  </div>
+
+
+
+  <div class="main-block">
+  <div class="main-block-image">
+    <img src="images/image1.png" width="100%">
+    <div class="image-social-links"><a>FACEBOOK</a><a>TWITTER</a><a>INSTAGRAM</a><a>PINTEREST</a></div>
+  </div> 
+  <div class="main-block-text">
+    <h2 class="block-header">An interview with sodk.</h2>
+    <p class="block-date">17/01/20</p>
+    <p class="block-desc">Nulla nec felis a urna pulvinar finibus. Aliquam aliquam porta nisi. In sit amet justo at mi fermentum pulvinar nec eget libero. In nec imperdiet risus, ut consequat augue.</p>
+    <a class="block-read-more">Read More</a>
+    <p class="artist-feature">Artist Feature</p>
+  </div> 
+  </div>
+
+
+
+  <div class="article-section">
+  <div class="medium-block">
+      <img src="images/image2.png" width="100%">
+    <div class="medium-block-text">
+      <h2 class="block-header">An interview with sodk.</h2>
+      <p class="block-date">17/01/20</p>
+      <p class="block-desc">Nulla nec felis a urna pulvinar finibus. Aliquam aliquam porta nisi. In sit amet justo at mi fermentum pulvinar nec eget libero. In nec imperdiet risus, ut consequat augue.</p>
+      <div class="article-section">
+      <a class="block-read-more">Read More</a>
+      <p class="artist-feature af1">INSPIRATION</p>
+      </div>
+    </div>
+    </div>
+
+    <div class="medium-block">
+        <img src="images/image3.png" width="100%">
+      <div class="medium-block-text">
+        <h2 class="block-header">An interview with sodk.</h2>
+        <p class="block-date">17/01/20</p>
+        <p class="block-desc">Nulla nec felis a urna pulvinar finibus. Aliquam aliquam porta nisi. In sit amet justo at mi fermentum pulvinar nec eget libero. In nec imperdiet risus, ut consequat augue.</p>
+        <div class="article-section">
+        <a class="block-read-more">Read More</a>
+        <p class="artist-feature af2">HOW TO</p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    
+  
+  
+        
+      <div class="masonry">
+        <div class="masonry-view">
+          <div class="small-block">
+              <img src="images/image4.png" width="100%">
+            <div class="small-block-text">
+              <h2 class="block-header-small">An interview with sodk.</h2>
+              <p class="block-date-small">17/01/20</p>
+              <p class="block-desc-small">Nulla nec felis a urna pulvinar finibus. Aliquam aliquam porta nisi. In sit amet justo at mi fermentum pulvinar nec eget libero. In nec imperdiet risus, ut consequat augue.</p>
+              <div class="article-section">
+              <a class="block-read-more-small">Read More</a>
+              <p class="artist-feature-small">NEWS</p>
+              </div>
+            </div>
+            </div>
+
+            <div class="small-block">
+              <img src="images/image6.png" width="100%">
+            <div class="small-block-text">
+              <h2 class="block-header-small">An interview with sodk.</h2>
+              <p class="block-date-small">17/01/20</p>
+              <p class="block-desc-small">Nulla nec felis a urna pulvinar finibus. Aliquam aliquam porta nisi. In sit amet justo at mi fermentum pulvinar nec eget libero. In nec imperdiet risus, ut consequat augue.</p>
+              <div class="article-section">
+              <a class="block-read-more-small">Read More</a>
+              <p class="artist-feature-small">NEWS</p>
+              </div>
+            </div>
+            </div>
+
+            <div class="small-block">
+                <img src="images/image9.png" width="100%">
+              <div class="small-block-text">
+                <h2 class="block-header-small">An interview with sodk.</h2>
+                <p class="block-date-small">17/01/20</p>
+                <p class="block-desc-small">Nulla nec felis a urna pulvinar finibus. Aliquam aliquam porta nisi. In sit amet justo at mi fermentum pulvinar nec eget libero. In nec imperdiet risus, ut consequat augue.</p>
+                <div class="article-section">
+                <a class="block-read-more-small">Read More</a>
+                <p class="artist-feature-small">NEWS</p>
+                </div>
+              </div>
+              </div>
+        </div>
+
+        <div class="masonry-view">      
+            <div class="individual-image">
+                <img src="images/image5.png" width="100%">
+              </div>
+
+              <div class="small-block">
+                  <img src="images/image7.png" width="100%">
+                <div class="small-block-text">
+                  <h2 class="block-header-small">An interview with sodk.</h2>
+                  <p class="block-date-small">17/01/20</p>
+                  <p class="block-desc-small">Nulla nec felis a urna pulvinar finibus. Aliquam aliquam porta nisi. In sit amet justo at mi fermentum pulvinar nec eget libero. In nec imperdiet risus, ut consequat augue.</p>
+                  <div class="article-section">
+                  <a class="block-read-more-small">Read More</a>
+                  <p class="artist-feature-small">NEWS</p>
+                  </div>
+                </div>
+                </div>
+
+                <div class="small-block">
+                    <img src="images/image10.png" width="100%">
+                  <div class="small-block-text">
+                    <h2 class="block-header-small">An interview with sodk.</h2>
+                    <p class="block-date-small">17/01/20</p>
+                    <p class="block-desc-small">Nulla nec felis a urna pulvinar finibus. Aliquam aliquam porta nisi. In sit amet justo at mi fermentum pulvinar nec eget libero. In nec imperdiet risus, ut consequat augue.</p>
+                    <div class="article-section">
+                    <a class="block-read-more-small">Read More</a>
+                    <p class="artist-feature-small">NEWS</p>
+                    </div>
+                  </div>
+                  </div>
+        </div>
+
+
+        <div class="masonry-view">
+              <div class="small-block">
+                <div class="list-text">
+                  <h2 class="list-title">Trending Posts</h2>
+                  <p class="list-header artist-text">Artist Feature</p>
+                  <p class="list-desc">Nulla nec felis a urna pulvinar finibus. Aliquam aliquam porta nisi.</p>
+                  <hr>
+                  <p class="list-header inspiration-text">Inspiration</p>
+                  <p class="list-desc">Nulla nec felis a urna pulvinar finibus. Aliquam aliquam porta nisi.</p>
+                  <hr>
+                  <p class="list-header how-to-text">How To</p>
+                  <p class="list-desc">Nulla nec felis a urna pulvinar finibus. Aliquam aliquam porta nisi.</p>
+                  <hr>
+                  <p class="list-header news-text">News</p>
+                  <p class="list-desc">Nulla nec felis a urna pulvinar finibus. Aliquam aliquam porta nisi.</p>
+                  <hr>
+                  <p class="list-header news-text2">News</p>
+                  <p class="last-element">Nulla nec felis a urna pulvinar finibus. Aliquam aliquam porta nisi.</p>
+                </div>
+                </div>
+
+                <div class="individual-image">
+                    <img src="images/image8.png" width="100%">
+                  </div>
+
+                  <div class="small-block">
+                      <img src="images/image11.png" width="100%">
+                    <div class="small-block-text">
+                      <h2 class="block-header-small">An interview with sodk.</h2>
+                      <p class="block-date-small">17/01/20</p>
+                      <p class="block-desc-small">Nulla nec felis a urna pulvinar finibus. Aliquam aliquam porta nisi. In sit amet justo at mi fermentum pulvinar nec eget libero. In nec imperdiet risus, ut consequat augue.</p>
+                      <div class="article-section">
+                      <a class="block-read-more-small">Read More</a>
+                      <p class="artist-feature-small">NEWS</p>
+                      </div>
+                    </div>
+                    </div>
+            </div>
+          </div>
+
+
 
   </div>
 
   </main>
 
   <footer>
-   <!-- <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </p>-->
   </footer>
 </body>
 </html>

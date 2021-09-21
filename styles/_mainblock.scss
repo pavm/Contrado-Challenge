@@ -1,0 +1,56 @@
+@import "./flex";
+@import "./variables";
+
+.main-block {@include flexCenter(center, center,row); background-color: white; margin-bottom: 4rem;}
+
+.main-block-image {
+    width: 75%;
+    position: relative;
+    text-align: center;
+    color: white;
+    }
+
+    .image-social-links {padding:0em 0.2em 0em 0.2em;
+        background-color: white;
+        color: black;
+        position: absolute;
+        bottom: 0.1rem;}
+    
+    .image-social-links a {margin-right: 0.4rem; margin-left: 0.4rem; cursor: pointer; font-size: 0.8rem;}
+    
+    .main-block-text {width: 25%; @include flexCenter(left, left,column); padding-left: 0rem; padding-right: 0rem; margin-bottom: auto;}
+
+    
+
+    .block-header {color: $text; font-size: 1.2rem; padding-bottom: 0.7rem; padding-top: 2rem; padding-left: $padding-left-main-text; padding-right: $padding-right-main-text} 
+    .block-date {color: $text; font-size: .7rem; padding-bottom: 1.5rem; padding-left: $padding-left-main-text; padding-right: $padding-right-main-text; color: lightgray;}
+    .block-desc {color: $text; font-size: .7rem; padding-bottom: 2rem; padding-left: $padding-left-main-text; padding-right: $padding-right-main-text; line-height: 1rem;}
+    .block-read-more {color: $text; font-size: .7rem; padding-bottom: 2rem; padding-left: $padding-left-main-text; padding-right: $padding-right-main-text; text-decoration: underline; cursor: pointer;}
+    .block-read-more:hover {text-decoration: none;}
+    
+    
+    .article-section {@include flexCenter(space-between, center,row);}
+
+
+    @media screen and (max-width: 1100px) {
+        .main-block-image {width: 65%; position: relative; text-align: center; color: white;}
+        .main-block-text {width: 35%;}
+    
+        .block-header {color: $text; font-size: .7rem; padding-bottom: 0.7rem; padding-top: 2rem; padding-left: $padding-left-main-text; padding-right: $padding-right-main-text} 
+        .block-desc {color: $text; font-size: .6rem; padding-bottom: 1rem; padding-left: $padding-left-main-text; padding-right: $padding-right-main-text; line-height: 1rem;}
+        .block-read-more {color: $text; font-size: .7rem; padding-bottom: 1rem; padding-left: $padding-left-main-text; padding-right: $padding-right-main-text; text-decoration: underline; cursor: pointer;}
+    
+    }
+
+
+    @media screen and (max-width: 900px) {
+        .main-block-image {width: 100%; position: relative; text-align: center; color: white;}
+.main-block {@include flexCenter(center, center, column); background-color: white; margin-bottom: 4rem;}
+.main-block-text {width: 100%; @include flexCenter(left, left,column); padding-left: 0rem; padding-right: 0rem; margin-bottom: auto;}
+.image-social-links a {font-size: 0.6rem;}
+.main-block-mobile {text-align: center}
+.block-header {font-size: 1rem;}
+
+
+
+    }

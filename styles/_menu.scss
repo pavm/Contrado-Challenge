@@ -1,0 +1,8 @@
+@import "./variables";
+@import "./flex";
+
+
+.menu-bar {@include flexCenter(center,center,row) flex-wrap: wrap}
+.menu-bar a {margin: 1.5rem; color: $text; text-decoration: none;}
+.menu-bar a:hover {text-decoration: underline}
+
